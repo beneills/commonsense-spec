@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/beneills/commonsense-gem.svg?branch=master)](https://travis-ci.org/beneills/commonsense-gem)
+
 # Commonsense
 
 This is the specification for the _commonsense_ text format used for resisting [authorship analysis](https://en.wikipedia.org/wiki/Stylometry).  Basically, it should be more difficult to attribute authorship to a conforming text through stylistic means.  This is essential for anonymous publishing.  The canonical implementation of a validator for this spec may be found [here](https://github.com/beneills/commonsense-gem).
@@ -51,10 +53,11 @@ A _candidate text_ conforms to the _commonsense_ spec if and only if it meets al
 ## Attack Vectors
 
 Possible vulnerabilities include (with example passing validation):
-1. Semantic: author betrays themself in meaning of text, e.g. revealing location _("I am in the south")_
-2. Format artefacts: common unique formatting between texts, e.g. use of punctuation _("I. Protest. Government.")_
-3. Stylistic: text style properties, e.g. dialectic _("I like protest government. I like seem political.")_
-4. Metadata: data outside our control, e.g. publication timestamps _("I protest government.")_
+
+1. __Semantic__: author betrays themself in meaning of text, e.g. revealing location _("I am in the south")_
+2. __Format Artefacts__: common unique formatting between texts, e.g. use of punctuation _("I. Protest. Government.")_
+3. __Stylistic__: text style properties, e.g. dialectic _("I like protest government. I like seem political.")_
+4. __Metadata__: data outside our control, e.g. publication timestamps _("I protest government.")_
 
 ### Mitigation
 
