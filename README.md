@@ -2,7 +2,7 @@
 
 # Commonsense
 
-This is the specification for the _commonsense_ text format used for resisting [authorship analysis](https://en.wikipedia.org/wiki/Stylometry).  Basically, it should be more difficult to attribute authorship to a conforming text through stylistic means.  This is essential for anonymous publishing.  The canonical implementation of a validator for this spec may be found [here](https://github.com/beneills/commonsense-gem).
+This is the specification for the _commonsense_ text format used for resisting [authorship analysis](https://en.wikipedia.org/wiki/Stylometry).  Basically, it should be more difficult to attribute authorship to a conforming text through stylistic means.  This is essential for anonymous publishing.  The canonical implementation of a validator for this spec may be found [here](https://github.com/beneills/commonsense-gem).  It is named after the [Common Sense](https://en.wikipedia.org/wiki/Common_Sense_(pamphlet)) pamphlet published anonymously by Thomas Paine in 1776.
 
 We aim to prevent the current-day identification of an author from published text, __and also their future identification__.
 
