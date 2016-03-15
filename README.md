@@ -29,7 +29,7 @@ __Note:__ all regular expressions are [Ruby regexps](http://ruby-doc.org/core/Re
 ### Definitions
 
 + A _candidate text_ is a UTF-8 encoded text stream.
-+ A _nice character_ is _/[a-zA-Z0-9 \.\n]/_
++ A _nice character_ is _/[a-zA-Z0-9 \\.\n]/_
 + A _line_ is a substring of the _candidate text_, maximal subject to not containing the _\n_ character
 + A _sentence character_ is _/[a-zA-Z0-9 ]/_
 + A _word character_ is _/[a-zA-Z0-9]/_
@@ -45,7 +45,7 @@ A _candidate text_ conforms to the _commonsense_ spec if and only if it meets al
 2. __Whitespace__: Each line has no beginning/trailing spaces and contains no consecutive space characters
 3. __Lines__: Each line is either empty, a _heading_ or a _sentence list_
 4. __Headings__: A _heading_ is _/S+/_, where S is any _sentence character_
-5. __Sentences__: A _sentence_ is _/S+\./_, where S is any _sentence character_
+5. __Sentences__: A _sentence_ is _/S+\\./_, where S is any _sentence character_
 6. __Sentence Lists__: _sentence lists_ are consecutive _sentences_, separated by a single space character
 7. __First Words__: The first _word_ of each sentence should be in the _capitalized word list_
 8. __Other Words__: All words not matching (7) should be in the _word list_
