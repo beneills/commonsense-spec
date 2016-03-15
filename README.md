@@ -52,15 +52,15 @@ A _candidate text_ conforms to the _commonsense_ spec if and only if it meets al
 
 Possible vulnerabilities include (with example passing validation):
 1. Semantic: author betrays themself in meaning of text, e.g. revealing location _("I am in the south")_
-2. Format artefacts: common unique formatting between texts, e.g. use of puctuation _("I. Protest. Government.")_
+2. Format artefacts: common unique formatting between texts, e.g. use of punctuation _("I. Protest. Government.")_
 3. Stylistic: text style properties, e.g. dialectic _("I like protest government. I like seem political.")_
-4. Metadata: data outside our control, e.g. publication timestamps _("I protest governemnt.")_
+4. Metadata: data outside our control, e.g. publication timestamps _("I protest government.")_
 
 ### Mitigation
 
 1. Not in the project scope.
 2. We do a pretty good job mitigating against formatting, by completely preventing things such as double-spaced sentences and trailing whitespace.
-3. Our severe restrictions on formatting and characters help to a large extent.  Vertical spacing bewteen paragraphs and sentence length are outside our control.
+3. Our severe restrictions on formatting and characters help to a large extent.  Vertical spacing between paragraphs and sentence length are outside our control.
 4. Not in the project scope.
 
 ## Todo
